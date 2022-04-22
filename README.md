@@ -1,5 +1,9 @@
 # User-Creation-with-Encrypted-Password-using-Ansible
 
+## Prerequisite
+
+Master node with Ansible installed
+
 ## Installing Ansible
 ```bash
 sudo amazon-linux-extras install ansible2 -y
