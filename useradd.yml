@@ -1,0 +1,13 @@
+---
+
+- name: "user creation"
+  become: true
+  hosts: amazon
+  tasks:
+    - name: "creating user and setting passwd"
+      user:
+        name: "admin"
+        create_home: yes
+        home: "/home/admin"
+        append: yes
+        password: "{{'admin@123' | password_hash('sha512')}}"
